@@ -1,24 +1,50 @@
-# README
+usersテーブル
+id
+email -string- null: false unique:true
+password -string- null: false unique:true
+nickname -string- null: false
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+アソシエーション
+has_many :tweets
+has_many :favorites
+has_many :favorite_tweets,
+through: :favorites, source: :tweet
+has_many :comments
 
-Things you may want to cover:
+tweets テーブル
 
-* Ruby version
+id
+text -text-
+image -text-
+user_id -integer- null: false foreign_key: true
+favorits -integer- foreign_key: true
 
-* System dependencies
+アソシエーション
+belong_to :user
+has_many :comments
+has_many :favorites
 
-* Configuration
 
-* Database creation
+commentsテーブル
 
-* Database initialization
+id
+text -text- null: false
+user_id -integer- foreign_key: true
+tweet_id -integer- foreign_key: true
+-integer- null: false, foreign_key: true
 
-* How to run the test suite
+アソシエーション
+belongs_to :tweet
+belongs_to :user
 
-* Services (job queues, cache servers, search engines, etc.)
+favoritesテーブル
+id
+user_id
+-integer- null: false foreign_key: true
 
-* Deployment instructions
+tweet_id
+-integer- null: false foreign_key: true
 
-* ...
+アソシエーション
+belong_to :user
+belongs_to :tweet
