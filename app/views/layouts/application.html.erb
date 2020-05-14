@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pictweet</title>
+    <title>Pan Pic</title>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
@@ -24,12 +24,13 @@
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">PicTweet</a></h1>
+        <h1 class="grid-6"><a href="/">Pan Pic</a></h1>
         <% if user_signed_in? %>
           <div class="user_nav grid-6">
             <span><%= current_user.nickname %>
               <ul class="user__info">
                 <li>
+                  <img class="header_img" src="https://pics.prcm.jp/c7182600f6f51/71928520/jpeg/71928520.jpeg">
                   <%= link_to "マイページ", "/users/#{current_user.id}" %>
                   <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
                 </li>
@@ -50,7 +51,7 @@
 
     <footer>
       <p>
-        Copyright PicTweet 2019.
+        Copyright Pan Pic 2020.
       </p>
     </footer>
   </body>
