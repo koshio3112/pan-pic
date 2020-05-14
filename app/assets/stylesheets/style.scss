@@ -40,6 +40,8 @@ $white: white;
 body,html {
   height: 100%;
   background-color: $lightGray;
+  background-image: url("https://images.unsplash.com/photo-1549488344-cab7d6164423?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE1ODB9");
+  background-size: cover;
 }
 
 body {
@@ -375,6 +377,7 @@ footer {
   color: $gray;
   p {
     text-align: center;
+    color: brown;
   }
 }
 
@@ -387,6 +390,7 @@ footer {
   }
 
   .search-btn {
+    background-image: url("https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE1ODB9");
     width: 10%;
   }
 }
