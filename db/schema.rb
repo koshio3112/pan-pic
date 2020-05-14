@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_09_030114) do
+ActiveRecord::Schema.define(version: 2020_05_14_013016) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2020_05_09_030114) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
+    t.integer "likes_count"
+    t.string "shop_name"
     t.index ["text"], name: "index_tweets_on_text", length: 32
   end
 
