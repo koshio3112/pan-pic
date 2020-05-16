@@ -213,6 +213,9 @@ header.header {
   }
 }
 div.contents.row {
+  p{
+    color: whitesmoke;
+  }
   h2 {
     @include boxBase(20px 0, 0);
     font-weight: normal;
@@ -318,7 +321,7 @@ div.contents.row {
     } 
   }
   .shop_url{
-    background-color: lightyellow;
+    background-color: whitesmoke;
   }
   .success {
     @include boxBase(20px 0 ,30px);
@@ -380,7 +383,7 @@ footer {
   color: $gray;
   p {
     text-align: center;
-    color: brown;
+    color:black;
   }
 }
 
