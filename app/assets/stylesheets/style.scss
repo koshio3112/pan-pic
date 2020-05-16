@@ -315,7 +315,10 @@ div.contents.row {
         font-size: 9px;
         display: block;
       }
-    }
+    } 
+  }
+  .shop_url{
+    background-color: lightyellow;
   }
   .success {
     @include boxBase(20px 0 ,30px);
