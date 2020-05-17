@@ -213,6 +213,9 @@ header.header {
   }
 }
 div.contents.row {
+  .nickname{
+    color: whitesmoke;
+  }
   h2 {
     @include boxBase(20px 0, 0);
     font-weight: normal;
