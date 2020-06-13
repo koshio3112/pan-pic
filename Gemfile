@@ -68,3 +68,5 @@ gem 'devise'
 gem 'kaminari'
 gem 'jquery-rails'
 gem 'rinku'
+gem 'pg', group: :production 
+gem 'sqlite3', group: [:development, :test]

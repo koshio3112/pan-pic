@@ -52,3 +52,6 @@ production:
   database: pan-pic_production
   username: pan-pic
   password: <%= ENV['PAN-PIC_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
