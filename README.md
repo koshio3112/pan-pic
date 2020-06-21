@@ -48,3 +48,5 @@ tweet_id
 アソシエーション
 belong_to :user
 belongs_to :tweet
+
+likesテーブル
